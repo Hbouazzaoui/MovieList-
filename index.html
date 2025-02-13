@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movielist</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- 🔹 Header -->
+    <header>
+        <div class="header-nav">
+            <div class="logo">
+                <img src="./images/movi.png" alt="Movielist">
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#section">Movies</a>
+                <a href="addMovie.html" href="#add" class="btn btn-danger">Add a Movie</a>
+            </nav>
+        </div>
+
+        <div class="search-container">
+            <h1>Find Movies, TV shows and more</h1>
+            <div class="search-box">
+                <input id="searchInput" type="search" placeholder="Find what you want...">
+                <button class="btn btn-warning" onclick="searchMovies()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🔹 Trending Section -->
+    <section  class="container my-5  ">
+       <section id="section">
+        <h1>Latest movies</h1>
+        <div id="movieList">
+
+        </div>
+    </section>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <p>&copy; 2025 Movielist. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
